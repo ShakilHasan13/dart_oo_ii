@@ -18,7 +18,6 @@ Implement the withdraw() method in the CurrentAccount class as follows:
 ● If the withdrawal amount exceeds the overdraft limit, print a message indicating
 insufficient funds.
 
-
 In main()
 ● Create an instance of the SavingsAccount class by providing values for the account
 number, initial balance, and interest rate.
@@ -77,12 +76,13 @@ class CurrentAccount extends Account {
 }
 
 void main() {
-  SavingsAccount savingsAccount = SavingsAccount(123456, 1000.0, 0.05);
+  SavingsAccount savingsAccount = SavingsAccount(1010111, 1000.0, 0.04);
   savingsAccount.deposit(5000.0);
   savingsAccount.withdraw(200.0);
 
+  print('\n');
 
-  CurrentAccount currentAccount = CurrentAccount(987654, 2000.0, 1000.0);
+  CurrentAccount currentAccount = CurrentAccount(1010112, 2000.0, 1000.0);
   currentAccount.deposit(3000.0);
   currentAccount.withdraw(2500.0);
 }
